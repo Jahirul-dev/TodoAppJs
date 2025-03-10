@@ -4,16 +4,17 @@ let getULinner = getUl.innerHTML;
 let createLI = document.createElement("tr");
 
 addForm.addEventListener("submit", (e) => {
-  e.preventDefault();
+  // e.preventDefault();
   let valOfIn = document.querySelector(".addForm").value;
   console.log(valOfIn);
-});
 
-//console.log(getULinner);
-
-createLI.innerHTML = `<li
+  createLI.innerHTML = `<li
             class="list-group-item d-flex justify-content-between align-items-center"
           >
             <span>play mariokart</span>
             <i class="far fa-trash-alt delete"></i>
           </li>`;
+  getUl.append(createLI);
+});
+
+//console.log(getULinner);
