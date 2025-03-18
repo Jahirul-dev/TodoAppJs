@@ -20,10 +20,9 @@ function genarator(val){
 
 getForm.addEventListener("submit", (e)=>{
     e.preventDefault();
-    let formVal = getForm.add.value
+    let formVal = getForm.add.value.trim()
     onclick = getField.value = " "
     console.log(formVal);
-
     genarator(formVal)
     
     
